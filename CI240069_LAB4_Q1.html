@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Interactive Page</title>
+</head>
+<body>
+
+<center>
+  <h1 style="font-size: 40px;">👋 Welcome!</h1>
+  
+  <div id="myElement">
+    <p id="myParagraph" style="font-size: 24px;">Welcome to my website!</p>
+  </div>
+
+  <br>
+
+  <button id="myButton" onclick="changeText()" style="font-size: 20px; padding: 10px 20px;">
+    Click Me
+  </button>
+</center>
+
+<script>
+  function changeText() {
+    const paragraph = document.getElementById("myParagraph");
+    const button = document.getElementById("myButton");
+
+    paragraph.innerHTML = "Hello there!";
+    paragraph.style.color = "#682434";
+    paragraph.style.fontWeight = "bold";
+    paragraph.style.fontSize = "32px"; 
+    button.style.display = "none";
+  }
+</script>
+
+</body>
+</html>

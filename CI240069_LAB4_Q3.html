@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Loop from 1 to 5</title>
+</head>
+<body>
+
+<h2 style="font-size: 30px; color: #682434; text-align: center;">Number Loop</h2>
+
+<p id="demo" style="font-size: 20px; line-height: 1.6; color: #333; text-align: center;"></p>
+
+<script>
+  let text = "";
+  for (let i = 0; i < 5; i++) {
+    text += "<span style='font-size: 22px; color: #D470A2;'>The number is " + (i + 1) + "</span><br>";
+  }
+  document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>
